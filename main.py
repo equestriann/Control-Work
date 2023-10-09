@@ -1,9 +1,9 @@
 # Вариант №1
 def make_new_array(string):
     array_ = []
-    for i in string:
-        if len(i) <= 3:
-            array_.append(i)
+    for a in string:
+        if len(a) <= 3:
+            array_.append(a)
 
     return array_
 
@@ -19,4 +19,10 @@ for i in strings:
 
 # Вариант №2
 def make_new_array_from_input():
-    pass
+    list_of_strings = input('Напишите что-нибудь: ')
+    array_ = []
+    for b in list_of_strings.split():
+        if len(b) <= 3:
+            array_.append(b)
+
+    return array_
